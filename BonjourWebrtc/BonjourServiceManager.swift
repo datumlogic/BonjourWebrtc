@@ -96,7 +96,7 @@ extension BonjourServiceManager : MCNearbyServiceAdvertiserDelegate {
     print("didNotStartAdvertisingPeer: \(error)")
   }
   
-  func advertiser(advertiser: MCNearbyServiceAdvertiser, didReceiveInvitationFromPeer peerID: MCPeerID, withContext context: NSData?, invitationHandler: ((Bool, MCSession) -> Void)) {
+  func advertiser(advertiser: MCNearbyServiceAdvertiser, didReceiveInvitationFromPeer peerID: MCPeerID, withContext context: NSData?, invitationHandler: (Bool, MCSession?) -> Void) {
     print("didReceiveInvitationFromPeer \(peerID)")
     invitationHandler(true, self.session)
   }

@@ -25,6 +25,7 @@
 		97B3FEB71CD9EF4C001C816D /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 97B3FEB61CD9EF4C001C816D /* libc++.tbd */; };
 		97B3FEB91CD9EF57001C816D /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97B3FEB81CD9EF57001C816D /* VideoToolbox.framework */; };
 		97B3FEBB1CD9EF61001C816D /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 97B3FEBA1CD9EF61001C816D /* libsqlite3.0.tbd */; };
+		B0C168FF1E421ECF00050C8F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B0C168FE1E421ECF00050C8F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,7 @@
 		97B3FEB61CD9EF4C001C816D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		97B3FEB81CD9EF57001C816D /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		97B3FEBA1CD9EF61001C816D /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		B0C168FE1E421ECF00050C8F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		97B3FE641CD9ED7D001C816D = {
 			isa = PBXGroup;
 			children = (
+				B0C168FE1E421ECF00050C8F /* README.md */,
 				97B3FEBA1CD9EF61001C816D /* libsqlite3.0.tbd */,
 				97B3FEB81CD9EF57001C816D /* VideoToolbox.framework */,
 				97B3FEB61CD9EF4C001C816D /* libc++.tbd */,
@@ -206,11 +209,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Dhilip Raveendran";
 				TargetAttributes = {
 					97B3FE6C1CD9ED7D001C816D = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = VFX8SCY653;
 					};
 				};
 			};
@@ -252,6 +256,7 @@
 			files = (
 				97B3FEB01CD9EEC9001C816D /* WebrtcManager.swift in Sources */,
 				97B3FE731CD9ED7D001C816D /* ViewController.swift in Sources */,
+				B0C168FF1E421ECF00050C8F /* README.md in Sources */,
 				97B3FEB11CD9EEC9001C816D /* WebrtcManagerProtocol.swift in Sources */,
 				97B3FEAC1CD9EEC9001C816D /* RTCICECandidate+JSON.m in Sources */,
 				97B3FE711CD9ED7D001C816D /* AppDelegate.swift in Sources */,
@@ -298,8 +303,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -344,8 +351,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -364,6 +373,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -374,9 +384,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = VFX8SCY653;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BonjourWebrtc/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -386,6 +397,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BonjourWebrtc/BonjourWebrtc-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -394,9 +406,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = VFX8SCY653;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BonjourWebrtc/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -405,6 +418,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mahabali.BonjourWebrtc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BonjourWebrtc/BonjourWebrtc-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};

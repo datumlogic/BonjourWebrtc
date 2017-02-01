@@ -26,3 +26,12 @@ MIT
 [Me](https://in.linkedin.com/in/dhilipr)
 
 [My blog](https://mobilitysolutionsexpert.wordpress.com/)
+
+#Gene's edit 1 Feb 2017  
+*When opening in a newer version of XCode, asks if we would like to convert to Swift 3. Say Later/Later  
+*Go to Build Settings->Swift Compiler - Version->Use Legacy Swift Language Version and set to YES  
+*In BonjourServiceManager.swift, change Line 99 from:
+invitationHandler: ((Bool, MCSession))   
+To:
+invitationHandler: (Bool, MCSession?) 
+  
